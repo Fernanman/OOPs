@@ -1,0 +1,32 @@
+[gd_scene load_steps=4 format=3 uid="uid://mtsoaoifrw4e"]
+
+[ext_resource type="FontVariation" uid="uid://dl5tqwvn35ou5" path="res://assets/font/PixelFont.tres" id="1_5iww1"]
+[ext_resource type="Script" path="res://scripts/one_liner.gd" id="1_tbckb"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_xy8sm"]
+
+[node name="OneLiner" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_tbckb")
+
+[node name="CenterContainer" type="CenterContainer" parent="."]
+layout_mode = 0
+offset_top = -2.0
+offset_right = 105.0
+offset_bottom = 38.0
+
+[node name="LineEdit" type="LineEdit" parent="CenterContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_5iww1")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_xy8sm")
+placeholder_text = "Your code here!"
+expand_to_text_length = true
+
+[connection signal="mouse_entered" from="CenterContainer/LineEdit" to="." method="_on_line_edit_mouse_entered"]
+[connection signal="mouse_exited" from="CenterContainer/LineEdit" to="." method="_on_line_edit_mouse_exited"]
+[connection signal="text_submitted" from="CenterContainer/LineEdit" to="." method="_on_line_edit_text_submitted"]

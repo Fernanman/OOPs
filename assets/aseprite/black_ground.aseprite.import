@@ -1,0 +1,14 @@
+[remap]
+
+importer="aseprite_wizard.plugin.noop"
+type="PackedDataContainer"
+uid="uid://bct00ist0siyd"
+path="res://.godot/imported/black_ground.aseprite-6d09f4c1c71bad99bc144338a1746d90.res"
+
+[deps]
+
+source_file="res://assets/aseprite/black_ground.aseprite"
+dest_files=["res://.godot/imported/black_ground.aseprite-6d09f4c1c71bad99bc144338a1746d90.res"]
+
+[params]
+

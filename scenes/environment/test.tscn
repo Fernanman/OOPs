@@ -1,0 +1,72 @@
+[gd_scene load_steps=4 format=3 uid="uid://dixneijad5bgl"]
+
+[ext_resource type="PackedScene" uid="uid://mtsoaoifrw4e" path="res://scenes/editor/one_liner.tscn" id="1_yco42"]
+[ext_resource type="PackedScene" uid="uid://dgcc3vighjrw1" path="res://scenes/environment/black_ground.tscn" id="2_6w7pi"]
+[ext_resource type="PackedScene" uid="uid://1mm4efcn0gim" path="res://scenes/player/player.tscn" id="3_p5nwc"]
+
+[node name="Test" type="Node2D"]
+
+[node name="OneLiner" parent="." instance=ExtResource("1_yco42")]
+anchors_preset = 0
+anchor_right = 0.0
+anchor_bottom = 0.0
+offset_left = 304.0
+offset_top = 2.0
+offset_right = 304.0
+offset_bottom = 2.0
+grow_horizontal = 1
+grow_vertical = 1
+
+[node name="Ground" type="Node2D" parent="."]
+position = Vector2(234, 180)
+
+[node name="BlackGround5" parent="Ground" instance=ExtResource("2_6w7pi")]
+position = Vector2(88, 8)
+
+[node name="BlackGround6" parent="Ground" instance=ExtResource("2_6w7pi")]
+position = Vector2(72, 8)
+
+[node name="BlackGround7" parent="Ground" instance=ExtResource("2_6w7pi")]
+position = Vector2(120, 8)
+
+[node name="BlackGround8" parent="Ground" instance=ExtResource("2_6w7pi")]
+position = Vector2(104, 8)
+
+[node name="BlackGround2" parent="Ground" instance=ExtResource("2_6w7pi")]
+position = Vector2(24, 8)
+
+[node name="BlackGround" parent="Ground" instance=ExtResource("2_6w7pi")]
+position = Vector2(8, 8)
+
+[node name="BlackGround3" parent="Ground" instance=ExtResource("2_6w7pi")]
+position = Vector2(56, 8)
+
+[node name="BlackGround4" parent="Ground" instance=ExtResource("2_6w7pi")]
+position = Vector2(40, 8)
+
+[node name="BlackGround9" parent="Ground" instance=ExtResource("2_6w7pi")]
+position = Vector2(216, 8)
+
+[node name="BlackGround10" parent="Ground" instance=ExtResource("2_6w7pi")]
+position = Vector2(200, 8)
+
+[node name="BlackGround11" parent="Ground" instance=ExtResource("2_6w7pi")]
+position = Vector2(248, 8)
+
+[node name="BlackGround12" parent="Ground" instance=ExtResource("2_6w7pi")]
+position = Vector2(232, 8)
+
+[node name="BlackGround13" parent="Ground" instance=ExtResource("2_6w7pi")]
+position = Vector2(152, 8)
+
+[node name="BlackGround14" parent="Ground" instance=ExtResource("2_6w7pi")]
+position = Vector2(136, 8)
+
+[node name="BlackGround15" parent="Ground" instance=ExtResource("2_6w7pi")]
+position = Vector2(184, 8)
+
+[node name="BlackGround16" parent="Ground" instance=ExtResource("2_6w7pi")]
+position = Vector2(168, 8)
+
+[node name="Player" parent="." instance=ExtResource("3_p5nwc")]
+position = Vector2(266, 163)
