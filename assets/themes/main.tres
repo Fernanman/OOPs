@@ -1,0 +1,102 @@
+[gd_resource type="Theme" load_steps=18 format=3 uid="uid://bi3208d1cw0cu"]
+
+[ext_resource type="Texture2D" uid="uid://co1sc8ptdpwip" path="res://assets/png/UI/button_hover.png" id="1_4nqi4"]
+[ext_resource type="Texture2D" uid="uid://dypmpysf6u4ws" path="res://assets/png/UI/button_normal.png" id="1_ag1bj"]
+[ext_resource type="FontVariation" uid="uid://dl5tqwvn35ou5" path="res://assets/font/PixelFont.tres" id="2_7bqgx"]
+[ext_resource type="Texture2D" uid="uid://3xsaq1ui00x2" path="res://assets/png/UI/button_pressed.png" id="3_dppmr"]
+[ext_resource type="Texture2D" uid="uid://i4ki7fodl6gj" path="res://assets/png/UI/texttwo.png" id="5_vdmob"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_2sqq6"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_pohcv"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_biufa"]
+texture = ExtResource("1_4nqi4")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_mvkj3"]
+texture = ExtResource("1_ag1bj")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_0oigx"]
+texture = ExtResource("3_dppmr")
+
+[sub_resource type="Image" id="Image_27b70"]
+data = {
+"data": PackedByteArray(255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 1, 179, 179, 179, 20, 188, 188, 188, 19, 255, 255, 255, 1, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 179, 179, 179, 20, 180, 180, 180, 64, 180, 180, 180, 64, 188, 188, 188, 19, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 188, 188, 188, 19, 180, 180, 180, 64, 180, 180, 180, 64, 188, 188, 188, 19, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 1, 188, 188, 188, 19, 188, 188, 188, 19, 255, 255, 255, 1, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0),
+"format": "RGBA8",
+"height": 8,
+"mipmaps": false,
+"width": 8
+}
+
+[sub_resource type="ImageTexture" id="ImageTexture_xpnb3"]
+image = SubResource("Image_27b70")
+
+[sub_resource type="Image" id="Image_juy5w"]
+data = {
+"data": PackedByteArray(181, 181, 181, 48, 179, 179, 179, 50, 213, 213, 213, 6, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 180, 180, 180, 64, 180, 180, 180, 64, 179, 179, 179, 50, 180, 180, 180, 64, 180, 180, 180, 54, 213, 213, 213, 6, 255, 255, 255, 0, 255, 255, 255, 0, 180, 180, 180, 64, 180, 180, 180, 64, 204, 204, 204, 5, 178, 178, 178, 53, 180, 180, 180, 64, 180, 180, 180, 54, 213, 213, 213, 6, 255, 255, 255, 0, 180, 180, 180, 64, 180, 180, 180, 64, 255, 255, 255, 0, 204, 204, 204, 5, 182, 182, 182, 52, 180, 180, 180, 64, 180, 180, 180, 51, 255, 255, 255, 0, 180, 180, 180, 64, 180, 180, 180, 64, 255, 255, 255, 0, 213, 213, 213, 6, 180, 180, 180, 54, 180, 180, 180, 64, 179, 179, 179, 50, 255, 255, 255, 0, 180, 180, 180, 64, 180, 180, 180, 64, 213, 213, 213, 6, 180, 180, 180, 54, 180, 180, 180, 64, 183, 183, 183, 53, 170, 170, 170, 6, 255, 255, 255, 0, 180, 180, 180, 64, 180, 180, 180, 64, 182, 182, 182, 49, 180, 180, 180, 64, 183, 183, 183, 53, 170, 170, 170, 6, 255, 255, 255, 0, 255, 255, 255, 0, 180, 180, 180, 64, 180, 180, 180, 64, 181, 181, 181, 41, 182, 182, 182, 49, 170, 170, 170, 6, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 180, 180, 180, 64, 180, 180, 180, 64),
+"format": "RGBA8",
+"height": 8,
+"mipmaps": false,
+"width": 8
+}
+
+[sub_resource type="ImageTexture" id="ImageTexture_px0x3"]
+image = SubResource("Image_juy5w")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_nsufi"]
+texture = ExtResource("5_vdmob")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_wnu1h"]
+texture = ExtResource("5_vdmob")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_k3pfb"]
+texture = ExtResource("5_vdmob")
+
+[resource]
+default_font = ExtResource("2_7bqgx")
+Button/colors/font_color = Color(1, 1, 1, 1)
+Button/colors/font_disabled_color = Color(0.875, 0.875, 0.875, 0.5)
+Button/colors/font_focus_color = Color(1, 1, 1, 1)
+Button/colors/font_hover_color = Color(1, 1, 1, 1)
+Button/colors/font_hover_pressed_color = Color(1, 1, 1, 1)
+Button/colors/font_outline_color = Color(1, 1, 1, 1)
+Button/colors/font_pressed_color = Color(1, 1, 1, 1)
+Button/colors/icon_disabled_color = Color(1, 1, 1, 0.4)
+Button/colors/icon_focus_color = Color(1, 1, 1, 1)
+Button/colors/icon_hover_color = Color(1, 1, 1, 1)
+Button/colors/icon_hover_pressed_color = Color(1, 1, 1, 1)
+Button/colors/icon_normal_color = Color(1, 1, 1, 1)
+Button/colors/icon_pressed_color = Color(1, 1, 1, 1)
+Button/constants/h_separation = 4
+Button/constants/icon_max_width = 0
+Button/constants/outline_size = 0
+Button/font_sizes/font_size = 18
+Button/fonts/font = ExtResource("2_7bqgx")
+Button/styles/disabled = SubResource("StyleBoxEmpty_2sqq6")
+Button/styles/focus = SubResource("StyleBoxEmpty_pohcv")
+Button/styles/hover = SubResource("StyleBoxTexture_biufa")
+Button/styles/normal = SubResource("StyleBoxTexture_mvkj3")
+Button/styles/pressed = SubResource("StyleBoxTexture_0oigx")
+TextEdit/colors/background_color = Color(0, 0, 0, 0)
+TextEdit/colors/caret_background_color = Color(0, 0, 0, 1)
+TextEdit/colors/caret_color = Color(0.875, 0.875, 0.875, 1)
+TextEdit/colors/current_line_color = Color(0.25, 0.25, 0.26, 0.8)
+TextEdit/colors/font_color = Color(1, 1, 1, 1)
+TextEdit/colors/font_outline_color = Color(1, 1, 1, 1)
+TextEdit/colors/font_placeholder_color = Color(0.875, 0.875, 0.875, 0.6)
+TextEdit/colors/font_readonly_color = Color(0.875, 0.875, 0.875, 0.5)
+TextEdit/colors/font_selected_color = Color(0, 0, 0, 0)
+TextEdit/colors/search_result_border_color = Color(0.3, 0.3, 0.3, 0.4)
+TextEdit/colors/search_result_color = Color(0.3, 0.3, 0.3, 1)
+TextEdit/colors/selection_color = Color(0.5, 0.5, 0.5, 1)
+TextEdit/colors/word_highlighted_color = Color(0.5, 0.5, 0.5, 0.25)
+TextEdit/constants/caret_width = 1
+TextEdit/constants/line_spacing = 4
+TextEdit/constants/outline_size = 0
+TextEdit/font_sizes/font_size = 16
+TextEdit/fonts/font = ExtResource("2_7bqgx")
+TextEdit/icons/space = SubResource("ImageTexture_xpnb3")
+TextEdit/icons/tab = SubResource("ImageTexture_px0x3")
+TextEdit/styles/focus = SubResource("StyleBoxTexture_nsufi")
+TextEdit/styles/normal = SubResource("StyleBoxTexture_wnu1h")
+TextEdit/styles/read_only = SubResource("StyleBoxTexture_k3pfb")

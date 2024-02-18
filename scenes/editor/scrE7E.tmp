@@ -1,0 +1,35 @@
+[gd_scene load_steps=4 format=3 uid="uid://samgcud70ia6"]
+
+[ext_resource type="Script" path="res://scripts/script_editor.gd" id="1_kilrc"]
+[ext_resource type="FontVariation" uid="uid://dl5tqwvn35ou5" path="res://assets/font/PixelFont.tres" id="2_twc3r"]
+[ext_resource type="Theme" uid="uid://bi3208d1cw0cu" path="res://assets/themes/main.tres" id="3_n4xik"]
+
+[node name="Script Editor" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_kilrc")
+
+[node name="Editor" type="TextEdit" parent="."]
+layout_mode = 0
+offset_right = 286.0
+offset_bottom = 239.0
+theme = ExtResource("3_n4xik")
+theme_override_fonts/font = ExtResource("2_twc3r")
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 0
+offset_left = 179.0
+offset_top = 239.0
+offset_right = 293.0
+offset_bottom = 283.0
+theme = ExtResource("3_n4xik")
+theme_override_font_sizes/font_size = 20
+text = "Compile"
+
+[connection signal="mouse_entered" from="Editor" to="." method="_on_code_edit_mouse_entered"]
+[connection signal="mouse_exited" from="Editor" to="." method="_on_code_edit_mouse_exited"]
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

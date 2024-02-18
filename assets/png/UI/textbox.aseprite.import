@@ -1,0 +1,14 @@
+[remap]
+
+importer="aseprite_wizard.plugin.noop"
+type="PackedDataContainer"
+uid="uid://5f1gl63phgw2"
+path="res://.godot/imported/textbox.aseprite-35136ac96994e18b971d88b96225f4f9.res"
+
+[deps]
+
+source_file="res://assets/png/UI/textbox.aseprite"
+dest_files=["res://.godot/imported/textbox.aseprite-35136ac96994e18b971d88b96225f4f9.res"]
+
+[params]
+
