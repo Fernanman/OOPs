@@ -1,0 +1,160 @@
+[gd_scene load_steps=9 format=3 uid="uid://ykiux1wxuq86"]
+
+[ext_resource type="Script" path="res://scripts/Level.gd" id="1_hyswd"]
+[ext_resource type="PackedScene" uid="uid://bnsy7dsh77utq" path="res://scenes/environment/background.tscn" id="2_tnwn7"]
+[ext_resource type="PackedScene" uid="uid://1mm4efcn0gim" path="res://scenes/player/player.tscn" id="3_i8uyk"]
+[ext_resource type="PackedScene" uid="uid://dbpvffe3840fk" path="res://scenes/environment/platform.tscn" id="4_dho6p"]
+[ext_resource type="PackedScene" uid="uid://bvcc68lpwsa6j" path="res://scenes/environment/green_platform.tscn" id="5_xn8g5"]
+[ext_resource type="PackedScene" uid="uid://becg4ravjpqll" path="res://scenes/environment/key.tscn" id="6_rowwt"]
+[ext_resource type="PackedScene" uid="uid://samgcud70ia6" path="res://scenes/editor/script_editor.tscn" id="7_scel2"]
+[ext_resource type="PackedScene" uid="uid://c8qbe02upwia" path="res://scenes/environment/red_platform.tscn" id="8_3hs6k"]
+
+[node name="Level 4" type="Node2D"]
+script = ExtResource("1_hyswd")
+
+[node name="Background" parent="." instance=ExtResource("2_tnwn7")]
+visible = false
+
+[node name="Player" parent="." instance=ExtResource("3_i8uyk")]
+position = Vector2(33, 315)
+
+[node name="Platforms" type="Node2D" parent="."]
+
+[node name="Platform3" parent="Platforms" instance=ExtResource("4_dho6p")]
+position = Vector2(30, 334)
+
+[node name="Platform4" parent="Platforms" instance=ExtResource("4_dho6p")]
+position = Vector2(46, 334)
+
+[node name="Platform5" parent="Platforms" instance=ExtResource("4_dho6p")]
+position = Vector2(62, 334)
+
+[node name="Platform6" parent="Platforms" instance=ExtResource("4_dho6p")]
+position = Vector2(78, 334)
+
+[node name="Platform7" parent="Platforms" instance=ExtResource("4_dho6p")]
+position = Vector2(94, 334)
+
+[node name="Platform8" parent="Platforms" instance=ExtResource("4_dho6p")]
+position = Vector2(110, 334)
+
+[node name="Platform9" parent="Platforms" instance=ExtResource("4_dho6p")]
+position = Vector2(126, 334)
+
+[node name="Platform10" parent="Platforms" instance=ExtResource("4_dho6p")]
+position = Vector2(142, 334)
+
+[node name="GreenPlatform" parent="Platforms" instance=ExtResource("5_xn8g5")]
+position = Vector2(158, 334)
+
+[node name="RedPlatform" parent="Platforms" instance=ExtResource("8_3hs6k")]
+position = Vector2(283, 299)
+
+[node name="RedPlatform2" parent="Platforms" instance=ExtResource("8_3hs6k")]
+position = Vector2(267, 299)
+
+[node name="RedPlatform3" parent="Platforms" instance=ExtResource("8_3hs6k")]
+position = Vector2(251, 299)
+
+[node name="RedPlatform4" parent="Platforms" instance=ExtResource("8_3hs6k")]
+position = Vector2(235, 299)
+
+[node name="RedPlatform5" parent="Platforms" instance=ExtResource("8_3hs6k")]
+position = Vector2(219, 299)
+
+[node name="GreenPlatform2" parent="Platforms" instance=ExtResource("5_xn8g5")]
+position = Vector2(203, 299)
+
+[node name="Platform11" parent="Platforms" instance=ExtResource("4_dho6p")]
+position = Vector2(78, 266)
+
+[node name="Platform12" parent="Platforms" instance=ExtResource("4_dho6p")]
+position = Vector2(94, 266)
+
+[node name="Platform13" parent="Platforms" instance=ExtResource("4_dho6p")]
+position = Vector2(110, 266)
+
+[node name="Platform14" parent="Platforms" instance=ExtResource("4_dho6p")]
+position = Vector2(126, 266)
+
+[node name="Platform15" parent="Platforms" instance=ExtResource("4_dho6p")]
+position = Vector2(142, 266)
+
+[node name="GreenPlatform3" parent="Platforms" instance=ExtResource("5_xn8g5")]
+position = Vector2(158, 266)
+
+[node name="Platform16" parent="Platforms" instance=ExtResource("4_dho6p")]
+position = Vector2(78, 191)
+
+[node name="Platform17" parent="Platforms" instance=ExtResource("4_dho6p")]
+position = Vector2(94, 191)
+
+[node name="Platform18" parent="Platforms" instance=ExtResource("4_dho6p")]
+position = Vector2(110, 191)
+
+[node name="Platform19" parent="Platforms" instance=ExtResource("4_dho6p")]
+position = Vector2(126, 191)
+
+[node name="Platform20" parent="Platforms" instance=ExtResource("4_dho6p")]
+position = Vector2(142, 191)
+
+[node name="GreenPlatform4" parent="Platforms" instance=ExtResource("5_xn8g5")]
+position = Vector2(158, 191)
+
+[node name="RedPlatform6" parent="Platforms" instance=ExtResource("8_3hs6k")]
+position = Vector2(283, 231)
+
+[node name="RedPlatform7" parent="Platforms" instance=ExtResource("8_3hs6k")]
+position = Vector2(267, 231)
+
+[node name="RedPlatform8" parent="Platforms" instance=ExtResource("8_3hs6k")]
+position = Vector2(251, 231)
+
+[node name="RedPlatform9" parent="Platforms" instance=ExtResource("8_3hs6k")]
+position = Vector2(235, 231)
+
+[node name="RedPlatform10" parent="Platforms" instance=ExtResource("8_3hs6k")]
+position = Vector2(219, 231)
+
+[node name="GreenPlatform5" parent="Platforms" instance=ExtResource("5_xn8g5")]
+position = Vector2(203, 231)
+
+[node name="Platform21" parent="Platforms" instance=ExtResource("4_dho6p")]
+position = Vector2(199, 164)
+
+[node name="Platform22" parent="Platforms" instance=ExtResource("4_dho6p")]
+position = Vector2(215, 164)
+
+[node name="Platform23" parent="Platforms" instance=ExtResource("4_dho6p")]
+position = Vector2(231, 164)
+
+[node name="Platform24" parent="Platforms" instance=ExtResource("4_dho6p")]
+position = Vector2(247, 164)
+
+[node name="Platform25" parent="Platforms" instance=ExtResource("4_dho6p")]
+position = Vector2(263, 164)
+
+[node name="Platform26" parent="Platforms" instance=ExtResource("4_dho6p")]
+position = Vector2(275, 164)
+
+[node name="Platform27" parent="Platforms" instance=ExtResource("4_dho6p")]
+position = Vector2(291, 164)
+
+[node name="Platform28" parent="Platforms" instance=ExtResource("4_dho6p")]
+position = Vector2(307, 164)
+
+[node name="Platform29" parent="Platforms" instance=ExtResource("4_dho6p")]
+position = Vector2(323, 164)
+
+[node name="Platform30" parent="Platforms" instance=ExtResource("4_dho6p")]
+position = Vector2(339, 164)
+
+[node name="Key" parent="." instance=ExtResource("6_rowwt")]
+position = Vector2(339, 156)
+
+[node name="ScriptEditor" parent="." instance=ExtResource("7_scel2")]
+scale = Vector2(0.695654, 0.342165)
+
+[node name="Hazards" type="Node2D" parent="."]
+
+[node name="Barricades" type="Node2D" parent="."]

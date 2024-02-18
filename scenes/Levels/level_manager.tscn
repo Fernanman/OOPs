@@ -1,0 +1,16 @@
+[gd_scene load_steps=4 format=3 uid="uid://b5c77t2lnx8x"]
+
+[ext_resource type="Script" path="res://scripts/LevelManager.gd" id="1_s5q5d"]
+[ext_resource type="PackedScene" uid="uid://dixneijad5bgl" path="res://scenes/Levels/Level_1.tscn" id="2_i48qe"]
+[ext_resource type="PackedScene" uid="uid://cx2af0cia18se" path="res://scenes/environment/fade_out.tscn" id="3_ox0j8"]
+
+[node name="LevelManager" type="Node2D"]
+script = ExtResource("1_s5q5d")
+
+[node name="CurrentScene" type="Node2D" parent="."]
+
+[node name="Level 1" parent="CurrentScene" instance=ExtResource("2_i48qe")]
+
+[node name="Fade" parent="." instance=ExtResource("3_ox0j8")]
+
+[connection signal="animation_finished" from="Fade" to="." method="_on_fade_animation_finished"]

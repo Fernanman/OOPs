@@ -1,11 +1,14 @@
-[gd_scene load_steps=5 format=3 uid="uid://dixneijad5bgl"]
+[gd_scene load_steps=7 format=3 uid="uid://dixneijad5bgl"]
 
 [ext_resource type="PackedScene" uid="uid://bnsy7dsh77utq" path="res://scenes/environment/background.tscn" id="1_lri7i"]
+[ext_resource type="Script" path="res://scripts/Level.gd" id="1_tixmk"]
+[ext_resource type="PackedScene" uid="uid://samgcud70ia6" path="res://scenes/editor/script_editor.tscn" id="2_7ghhh"]
 [ext_resource type="PackedScene" uid="uid://1mm4efcn0gim" path="res://scenes/player/player.tscn" id="3_p5nwc"]
 [ext_resource type="PackedScene" uid="uid://dbpvffe3840fk" path="res://scenes/environment/platform.tscn" id="4_ydtw2"]
 [ext_resource type="PackedScene" uid="uid://becg4ravjpqll" path="res://scenes/environment/key.tscn" id="5_pwevl"]
 
-[node name="Test" type="Node2D"]
+[node name="Level 1" type="Node2D"]
+script = ExtResource("1_tixmk")
 
 [node name="Background" parent="." instance=ExtResource("1_lri7i")]
 visible = false
@@ -13,88 +16,95 @@ visible = false
 [node name="Player" parent="." instance=ExtResource("3_p5nwc")]
 position = Vector2(130, 155)
 
-[node name="Ground" type="Node2D" parent="."]
+[node name="Platforms" type="Node2D" parent="."]
 
-[node name="Platform3" parent="Ground" instance=ExtResource("4_ydtw2")]
+[node name="Platform3" parent="Platforms" instance=ExtResource("4_ydtw2")]
 position = Vector2(127, 174)
 
-[node name="Platform4" parent="Ground" instance=ExtResource("4_ydtw2")]
+[node name="Platform4" parent="Platforms" instance=ExtResource("4_ydtw2")]
 position = Vector2(143, 174)
 
-[node name="Platform5" parent="Ground" instance=ExtResource("4_ydtw2")]
+[node name="Platform5" parent="Platforms" instance=ExtResource("4_ydtw2")]
 position = Vector2(159, 174)
 
-[node name="Platform6" parent="Ground" instance=ExtResource("4_ydtw2")]
+[node name="Platform6" parent="Platforms" instance=ExtResource("4_ydtw2")]
 position = Vector2(175, 174)
 
-[node name="Platform7" parent="Ground" instance=ExtResource("4_ydtw2")]
+[node name="Platform7" parent="Platforms" instance=ExtResource("4_ydtw2")]
 position = Vector2(191, 174)
 
-[node name="Platform8" parent="Ground" instance=ExtResource("4_ydtw2")]
+[node name="Platform8" parent="Platforms" instance=ExtResource("4_ydtw2")]
 position = Vector2(207, 174)
 
-[node name="Platform9" parent="Ground" instance=ExtResource("4_ydtw2")]
+[node name="Platform9" parent="Platforms" instance=ExtResource("4_ydtw2")]
 position = Vector2(223, 174)
 
-[node name="Platform10" parent="Ground" instance=ExtResource("4_ydtw2")]
+[node name="Platform10" parent="Platforms" instance=ExtResource("4_ydtw2")]
 position = Vector2(239, 174)
 
-[node name="Platform11" parent="Ground" instance=ExtResource("4_ydtw2")]
+[node name="Platform11" parent="Platforms" instance=ExtResource("4_ydtw2")]
 position = Vector2(255, 174)
 
-[node name="Platform12" parent="Ground" instance=ExtResource("4_ydtw2")]
+[node name="Platform12" parent="Platforms" instance=ExtResource("4_ydtw2")]
 position = Vector2(271, 174)
 
-[node name="Platform13" parent="Ground" instance=ExtResource("4_ydtw2")]
+[node name="Platform13" parent="Platforms" instance=ExtResource("4_ydtw2")]
 position = Vector2(287, 174)
 
-[node name="Platform14" parent="Ground" instance=ExtResource("4_ydtw2")]
+[node name="Platform14" parent="Platforms" instance=ExtResource("4_ydtw2")]
 position = Vector2(303, 174)
 
-[node name="Platform15" parent="Ground" instance=ExtResource("4_ydtw2")]
+[node name="Platform15" parent="Platforms" instance=ExtResource("4_ydtw2")]
 position = Vector2(319, 174)
 
-[node name="Platform16" parent="Ground" instance=ExtResource("4_ydtw2")]
+[node name="Platform16" parent="Platforms" instance=ExtResource("4_ydtw2")]
 position = Vector2(335, 174)
 
-[node name="Platform25" parent="Ground" instance=ExtResource("4_ydtw2")]
+[node name="Platform25" parent="Platforms" instance=ExtResource("4_ydtw2")]
 position = Vector2(351, 174)
 
-[node name="Platform26" parent="Ground" instance=ExtResource("4_ydtw2")]
+[node name="Platform26" parent="Platforms" instance=ExtResource("4_ydtw2")]
 position = Vector2(367, 174)
 
-[node name="Platform27" parent="Ground" instance=ExtResource("4_ydtw2")]
+[node name="Platform27" parent="Platforms" instance=ExtResource("4_ydtw2")]
 position = Vector2(383, 174)
 
-[node name="Platform28" parent="Ground" instance=ExtResource("4_ydtw2")]
+[node name="Platform28" parent="Platforms" instance=ExtResource("4_ydtw2")]
 position = Vector2(399, 174)
 
-[node name="Platform29" parent="Ground" instance=ExtResource("4_ydtw2")]
+[node name="Platform29" parent="Platforms" instance=ExtResource("4_ydtw2")]
 position = Vector2(415, 174)
 
-[node name="Platform30" parent="Ground" instance=ExtResource("4_ydtw2")]
+[node name="Platform30" parent="Platforms" instance=ExtResource("4_ydtw2")]
 position = Vector2(431, 174)
 
-[node name="Platform31" parent="Ground" instance=ExtResource("4_ydtw2")]
+[node name="Platform31" parent="Platforms" instance=ExtResource("4_ydtw2")]
 position = Vector2(447, 174)
 
-[node name="Platform32" parent="Ground" instance=ExtResource("4_ydtw2")]
+[node name="Platform32" parent="Platforms" instance=ExtResource("4_ydtw2")]
 position = Vector2(463, 174)
 
-[node name="Platform33" parent="Ground" instance=ExtResource("4_ydtw2")]
+[node name="Platform33" parent="Platforms" instance=ExtResource("4_ydtw2")]
 position = Vector2(479, 174)
 
-[node name="Platform34" parent="Ground" instance=ExtResource("4_ydtw2")]
+[node name="Platform34" parent="Platforms" instance=ExtResource("4_ydtw2")]
 position = Vector2(495, 174)
 
-[node name="Platform35" parent="Ground" instance=ExtResource("4_ydtw2")]
+[node name="Platform35" parent="Platforms" instance=ExtResource("4_ydtw2")]
 position = Vector2(511, 174)
 
-[node name="Platform36" parent="Ground" instance=ExtResource("4_ydtw2")]
+[node name="Platform36" parent="Platforms" instance=ExtResource("4_ydtw2")]
 position = Vector2(527, 174)
 
-[node name="Platform37" parent="Ground" instance=ExtResource("4_ydtw2")]
+[node name="Platform37" parent="Platforms" instance=ExtResource("4_ydtw2")]
 position = Vector2(543, 174)
 
 [node name="Key" parent="." instance=ExtResource("5_pwevl")]
 position = Vector2(543, 164)
+
+[node name="ScriptEditor" parent="." instance=ExtResource("2_7ghhh")]
+scale = Vector2(0.695654, 0.342165)
+
+[node name="Hazards" type="Node2D" parent="."]
+
+[node name="Barricades" type="Node2D" parent="."]

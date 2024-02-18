@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://cx3tv1iaw0kqh"]
+
+[ext_resource type="PackedScene" uid="uid://bnsy7dsh77utq" path="res://scenes/environment/background.tscn" id="1_36jva"]
+[ext_resource type="FontVariation" uid="uid://dl5tqwvn35ou5" path="res://assets/font/PixelFont.tres" id="2_c47mw"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Background" parent="." instance=ExtResource("1_36jva")]
+
+[node name="Label" type="Label" parent="."]
+offset_left = 104.0
+offset_top = 141.0
+offset_right = 543.0
+offset_bottom = 187.0
+theme_override_fonts/font = ExtResource("2_c47mw")
+theme_override_font_sizes/font_size = 50
+text = "Thank you for playing!"

@@ -4,7 +4,7 @@
 [ext_resource type="FontVariation" uid="uid://dl5tqwvn35ou5" path="res://assets/font/PixelFont.tres" id="2_twc3r"]
 [ext_resource type="Theme" uid="uid://bi3208d1cw0cu" path="res://assets/themes/main.tres" id="3_n4xik"]
 
-[node name="Script Editor" type="Control"]
+[node name="ScriptEditor" type="Control"]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -19,6 +19,7 @@ offset_right = 286.0
 offset_bottom = 239.0
 theme = ExtResource("3_n4xik")
 theme_override_fonts/font = ExtResource("2_twc3r")
+theme_override_font_sizes/font_size = 30
 
 [node name="Button" type="Button" parent="."]
 layout_mode = 0

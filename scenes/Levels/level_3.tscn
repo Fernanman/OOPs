@@ -1,0 +1,81 @@
+[gd_scene load_steps=8 format=3 uid="uid://dvw0o6m2qduhp"]
+
+[ext_resource type="Script" path="res://scripts/Level.gd" id="1_0oiql"]
+[ext_resource type="PackedScene" uid="uid://bnsy7dsh77utq" path="res://scenes/environment/background.tscn" id="2_waehm"]
+[ext_resource type="PackedScene" uid="uid://1mm4efcn0gim" path="res://scenes/player/player.tscn" id="3_0na0k"]
+[ext_resource type="PackedScene" uid="uid://dbpvffe3840fk" path="res://scenes/environment/platform.tscn" id="4_m0b8c"]
+[ext_resource type="PackedScene" uid="uid://bvcc68lpwsa6j" path="res://scenes/environment/green_platform.tscn" id="5_nyviw"]
+[ext_resource type="PackedScene" uid="uid://becg4ravjpqll" path="res://scenes/environment/key.tscn" id="6_oj3ju"]
+[ext_resource type="PackedScene" uid="uid://samgcud70ia6" path="res://scenes/editor/script_editor.tscn" id="7_2s3bg"]
+
+[node name="Level 3" type="Node2D"]
+script = ExtResource("1_0oiql")
+
+[node name="Background" parent="." instance=ExtResource("2_waehm")]
+visible = false
+
+[node name="Player" parent="." instance=ExtResource("3_0na0k")]
+position = Vector2(130, 155)
+
+[node name="Platforms" type="Node2D" parent="."]
+
+[node name="Platform3" parent="Platforms" instance=ExtResource("4_m0b8c")]
+position = Vector2(127, 174)
+
+[node name="Platform4" parent="Platforms" instance=ExtResource("4_m0b8c")]
+position = Vector2(143, 174)
+
+[node name="Platform5" parent="Platforms" instance=ExtResource("4_m0b8c")]
+position = Vector2(159, 174)
+
+[node name="Platform6" parent="Platforms" instance=ExtResource("4_m0b8c")]
+position = Vector2(175, 174)
+
+[node name="Platform7" parent="Platforms" instance=ExtResource("4_m0b8c")]
+position = Vector2(191, 174)
+
+[node name="Platform8" parent="Platforms" instance=ExtResource("4_m0b8c")]
+position = Vector2(207, 174)
+
+[node name="Platform9" parent="Platforms" instance=ExtResource("4_m0b8c")]
+position = Vector2(223, 174)
+
+[node name="Platform29" parent="Platforms" instance=ExtResource("4_m0b8c")]
+position = Vector2(415, 174)
+
+[node name="Platform30" parent="Platforms" instance=ExtResource("4_m0b8c")]
+position = Vector2(431, 174)
+
+[node name="Platform31" parent="Platforms" instance=ExtResource("4_m0b8c")]
+position = Vector2(447, 174)
+
+[node name="Platform32" parent="Platforms" instance=ExtResource("4_m0b8c")]
+position = Vector2(463, 174)
+
+[node name="Platform33" parent="Platforms" instance=ExtResource("4_m0b8c")]
+position = Vector2(479, 174)
+
+[node name="Platform34" parent="Platforms" instance=ExtResource("4_m0b8c")]
+position = Vector2(495, 174)
+
+[node name="Platform35" parent="Platforms" instance=ExtResource("4_m0b8c")]
+position = Vector2(511, 174)
+
+[node name="Platform36" parent="Platforms" instance=ExtResource("4_m0b8c")]
+position = Vector2(527, 174)
+
+[node name="Platform37" parent="Platforms" instance=ExtResource("4_m0b8c")]
+position = Vector2(543, 174)
+
+[node name="GreenPlatform" parent="Platforms" instance=ExtResource("5_nyviw")]
+position = Vector2(239, 174)
+
+[node name="Key" parent="." instance=ExtResource("6_oj3ju")]
+position = Vector2(543, 164)
+
+[node name="ScriptEditor" parent="." instance=ExtResource("7_2s3bg")]
+scale = Vector2(0.695654, 0.342165)
+
+[node name="Hazards" type="Node2D" parent="."]
+
+[node name="Barricades" type="Node2D" parent="."]

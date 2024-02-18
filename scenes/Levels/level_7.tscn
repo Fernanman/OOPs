@@ -1,0 +1,163 @@
+[gd_scene load_steps=12 format=3 uid="uid://cbsgtxnmj4kmc"]
+
+[ext_resource type="Script" path="res://scripts/Level.gd" id="1_kdym2"]
+[ext_resource type="PackedScene" uid="uid://bnsy7dsh77utq" path="res://scenes/environment/background.tscn" id="2_udk6r"]
+[ext_resource type="PackedScene" uid="uid://1mm4efcn0gim" path="res://scenes/player/player.tscn" id="3_l4ttu"]
+[ext_resource type="PackedScene" uid="uid://dbpvffe3840fk" path="res://scenes/environment/platform.tscn" id="4_t8iql"]
+[ext_resource type="PackedScene" uid="uid://bvcc68lpwsa6j" path="res://scenes/environment/green_platform.tscn" id="5_nl13w"]
+[ext_resource type="PackedScene" uid="uid://c8qbe02upwia" path="res://scenes/environment/red_platform.tscn" id="6_b88ji"]
+[ext_resource type="PackedScene" uid="uid://becg4ravjpqll" path="res://scenes/environment/key.tscn" id="6_tmhka"]
+[ext_resource type="PackedScene" uid="uid://samgcud70ia6" path="res://scenes/editor/script_editor.tscn" id="7_35b2n"]
+[ext_resource type="PackedScene" uid="uid://bskooldxrv0m7" path="res://scenes/environment/hazard.tscn" id="9_0bl6y"]
+[ext_resource type="PackedScene" uid="uid://jxbo7vymr2n3" path="res://scenes/environment/anti_barricade.tscn" id="9_go7vv"]
+[ext_resource type="PackedScene" uid="uid://bj0dceyu1et0f" path="res://scenes/environment/barricade.tscn" id="11_wby1l"]
+
+[node name="Level 7" type="Node2D"]
+script = ExtResource("1_kdym2")
+
+[node name="Background" parent="." instance=ExtResource("2_udk6r")]
+visible = false
+
+[node name="Player" parent="." instance=ExtResource("3_l4ttu")]
+position = Vector2(434, 14)
+
+[node name="Platforms" type="Node2D" parent="."]
+
+[node name="Platform4" parent="Platforms" instance=ExtResource("4_t8iql")]
+position = Vector2(447, 33)
+
+[node name="GreenPlatform2" parent="Platforms" instance=ExtResource("5_nl13w")]
+position = Vector2(463, 33)
+
+[node name="RedPlatform" parent="Platforms" instance=ExtResource("6_b88ji")]
+position = Vector2(431, 33)
+
+[node name="Platform5" parent="Platforms" instance=ExtResource("4_t8iql")]
+position = Vector2(368, 82)
+
+[node name="GreenPlatform3" parent="Platforms" instance=ExtResource("5_nl13w")]
+position = Vector2(384, 82)
+
+[node name="RedPlatform2" parent="Platforms" instance=ExtResource("6_b88ji")]
+position = Vector2(352, 82)
+
+[node name="Platform6" parent="Platforms" instance=ExtResource("4_t8iql")]
+position = Vector2(528, 80)
+
+[node name="GreenPlatform4" parent="Platforms" instance=ExtResource("5_nl13w")]
+position = Vector2(544, 80)
+
+[node name="RedPlatform3" parent="Platforms" instance=ExtResource("6_b88ji")]
+position = Vector2(512, 80)
+
+[node name="Platform7" parent="Platforms" instance=ExtResource("4_t8iql")]
+position = Vector2(288, 143)
+
+[node name="GreenPlatform5" parent="Platforms" instance=ExtResource("5_nl13w")]
+position = Vector2(304, 143)
+
+[node name="RedPlatform4" parent="Platforms" instance=ExtResource("6_b88ji")]
+position = Vector2(272, 143)
+
+[node name="Platform8" parent="Platforms" instance=ExtResource("4_t8iql")]
+position = Vector2(450, 141)
+
+[node name="GreenPlatform6" parent="Platforms" instance=ExtResource("5_nl13w")]
+position = Vector2(466, 141)
+
+[node name="RedPlatform5" parent="Platforms" instance=ExtResource("6_b88ji")]
+position = Vector2(434, 141)
+
+[node name="Platform9" parent="Platforms" instance=ExtResource("4_t8iql")]
+position = Vector2(560, 141)
+
+[node name="GreenPlatform7" parent="Platforms" instance=ExtResource("5_nl13w")]
+position = Vector2(576, 141)
+
+[node name="RedPlatform6" parent="Platforms" instance=ExtResource("6_b88ji")]
+position = Vector2(544, 141)
+
+[node name="Platform10" parent="Platforms" instance=ExtResource("4_t8iql")]
+position = Vector2(235, 204)
+
+[node name="GreenPlatform8" parent="Platforms" instance=ExtResource("5_nl13w")]
+position = Vector2(251, 204)
+
+[node name="RedPlatform7" parent="Platforms" instance=ExtResource("6_b88ji")]
+position = Vector2(219, 204)
+
+[node name="Platform11" parent="Platforms" instance=ExtResource("4_t8iql")]
+position = Vector2(368, 202)
+
+[node name="GreenPlatform9" parent="Platforms" instance=ExtResource("5_nl13w")]
+position = Vector2(384, 202)
+
+[node name="RedPlatform8" parent="Platforms" instance=ExtResource("6_b88ji")]
+position = Vector2(352, 202)
+
+[node name="Platform12" parent="Platforms" instance=ExtResource("4_t8iql")]
+position = Vector2(520, 202)
+
+[node name="GreenPlatform10" parent="Platforms" instance=ExtResource("5_nl13w")]
+position = Vector2(536, 202)
+
+[node name="RedPlatform9" parent="Platforms" instance=ExtResource("6_b88ji")]
+position = Vector2(504, 202)
+
+[node name="Platform13" parent="Platforms" instance=ExtResource("4_t8iql")]
+position = Vector2(623, 202)
+
+[node name="GreenPlatform11" parent="Platforms" instance=ExtResource("5_nl13w")]
+position = Vector2(639, 202)
+
+[node name="RedPlatform10" parent="Platforms" instance=ExtResource("6_b88ji")]
+position = Vector2(607, 202)
+
+[node name="Key" parent="." instance=ExtResource("6_tmhka")]
+position = Vector2(485, 302)
+
+[node name="ScriptEditor" parent="." instance=ExtResource("7_35b2n")]
+scale = Vector2(0.695654, 0.342165)
+
+[node name="Hazards" type="Node2D" parent="."]
+
+[node name="Hazard" parent="Hazards" instance=ExtResource("9_0bl6y")]
+position = Vector2(446, 172)
+
+[node name="Hazard2" parent="Hazards" instance=ExtResource("9_0bl6y")]
+position = Vector2(294, 172)
+
+[node name="Hazard3" parent="Hazards" instance=ExtResource("9_0bl6y")]
+position = Vector2(446, 172)
+
+[node name="Barricades" type="Node2D" parent="."]
+
+[node name="AntiBarricade" parent="Barricades" instance=ExtResource("9_go7vv")]
+position = Vector2(288, 106)
+
+[node name="AntiBarricade2" parent="Barricades" instance=ExtResource("9_go7vv")]
+position = Vector2(288, 90)
+
+[node name="Barricade4" parent="Barricades" instance=ExtResource("11_wby1l")]
+position = Vector2(558, 191)
+
+[node name="Barricade5" parent="Barricades" instance=ExtResource("11_wby1l")]
+position = Vector2(1204, 297)
+
+[node name="Barricade6" parent="Barricades" instance=ExtResource("11_wby1l")]
+position = Vector2(1204, 281)
+
+[node name="Barricade" parent="Barricades" instance=ExtResource("11_wby1l")]
+position = Vector2(615, 106)
+
+[node name="Barricade2" parent="Barricades" instance=ExtResource("11_wby1l")]
+position = Vector2(615, 90)
+
+[node name="Barricade3" parent="Barricades" instance=ExtResource("11_wby1l")]
+position = Vector2(589, 191)
+
+[node name="AntiBarricade3" parent="Barricades" instance=ExtResource("9_go7vv")]
+position = Vector2(463, 195)
+
+[node name="AntiBarricade4" parent="Barricades" instance=ExtResource("9_go7vv")]
+position = Vector2(428, 196)
