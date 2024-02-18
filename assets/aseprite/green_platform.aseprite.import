@@ -1,0 +1,14 @@
+[remap]
+
+importer="aseprite_wizard.plugin.noop"
+type="PackedDataContainer"
+uid="uid://bt811ut81gs81"
+path="res://.godot/imported/green_platform.aseprite-aea43f62df8437726f65abbcc0b142b8.res"
+
+[deps]
+
+source_file="res://assets/aseprite/green_platform.aseprite"
+dest_files=["res://.godot/imported/green_platform.aseprite-aea43f62df8437726f65abbcc0b142b8.res"]
+
+[params]
+
