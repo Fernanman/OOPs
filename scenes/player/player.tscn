@@ -1,7 +1,7 @@
 [gd_scene load_steps=10 format=3 uid="uid://1mm4efcn0gim"]
 
 [ext_resource type="Script" path="res://scripts/player.gd" id="1_f1qn8"]
-[ext_resource type="Texture2D" uid="uid://d027t2hx6n7ny" path="res://scenes/player/white_player.png" id="2_ovymc"]
+[ext_resource type="Texture2D" uid="uid://bngb3rlvh4evq" path="res://assets/png/white_player.png" id="2_ovymc"]
 
 [sub_resource type="Animation" id="Animation_78soi"]
 length = 0.4
